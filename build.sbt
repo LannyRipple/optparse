@@ -4,7 +4,7 @@ organization := "org.fud"
 
 version := "1.0-si-e1d1c74"
 
-scalaVersion := "2.9.1"
+scalaVersion := "2.9.2"
 
 scalacOptions ++= Seq(
     "-deprecation"

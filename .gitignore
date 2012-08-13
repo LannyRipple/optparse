@@ -3,3 +3,6 @@ scaladoc
 optparse.jar
 project/
 target/
+*.iml
+.idea
+.idea_modules
