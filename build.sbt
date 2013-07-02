@@ -20,7 +20,7 @@ publishMavenStyle := true
 
 publishTo <<= (version) {
     version: String =>
-        val nexus = "http://maven.talkrank.com:8088/nexus/content/repositories/"
+        val nexus = "http://maven.talkrank.com:8081/nexus/content/repositories/"
         if (version.trim.endsWith("SNAPSHOT")) Some("nexus snapshots" at nexus+"snapshots/")
         else                                   Some("nexus releases" at nexus+"thirdparty/")
 }
