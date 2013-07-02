@@ -613,7 +613,7 @@ class OptionParser {
   // two existing switches.
   protected def addSwitch(switch: Switch): Unit = {
     def remove(p: Switch => Boolean): Unit = 
-      switches.findIndexOf(p) match {
+      switches.indexWhere(p) match {
         case -1  =>
         case idx => switches.remove(idx)
       }
